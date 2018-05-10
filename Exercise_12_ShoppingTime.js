@@ -37,6 +37,11 @@ function shoppingTime(memberId, money) {
             sisaUang = sisaUang - 50000
             //console.log("sisa casing " + sisaUang)
     }
+        if (sisaUang < 0) {
+            sisaUang = 0
+        } else {
+            sisaUang = sisaUang
+        }
     shopObj.listPurchased = belanjaan
     shopObj.changeMoney = sisaUang
     return shopObj
